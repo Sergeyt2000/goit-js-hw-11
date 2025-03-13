@@ -8,15 +8,50 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <form class="form">
+      <label>
+        <input
+          class="form-input"
+          type="text"
+          name="search-text"
+          placeholder="Search images..."
+        />
+        <!-- required -->
+      </label>
+      <button class="submit-btn" type="submit">Search</button>
+    </form>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+    <span class="loader visually-hidden"></span>
 
-    <load src="./partials/footer.html" />
+    <ul class="gallery">
+      <!-- <li class="gallery-item">
+        <div>
+          <a class="gallery-link" href="${webformatURL}">
+            <img class="gallery-image" src="./img/vite-logo.png" alt="${tags}" />
+          </a>
+          <div class="img-descr">
+            <ul class="list-descr">
+              <li class="item-descr">
+                <p class="descr-name">Likes</p>
+                <p class="descr-value">${likes}</p>
+              </li>
+              <li class="item-descr">
+                <p class="descr-name">Views</p>
+                <p class="descr-value">${views}</p>
+              </li>
+              <li class="item-descr">
+                <p class="descr-name">Comments</p>
+                <p class="descr-value">${comments}</p>
+              </li>
+              <li class="item-descr">
+                <p class="descr-name">Downloads</p>
+                <p class="descr-value">${downloads}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li> -->
+    </ul>
 
     <script type="module" src="./main.js"></script>
   </body>
