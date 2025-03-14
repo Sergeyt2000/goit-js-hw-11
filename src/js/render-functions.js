@@ -1,6 +1,3 @@
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
-
 export const createMarkUp = images =>
   images
     .map(image => {
@@ -50,15 +47,3 @@ export const createMarkUp = images =>
       `;
     })
     .join('');
-
-export function galleryModal() {
-  let gallery = new SimpleLightbox('.gallery a', {
-    captionsData: 'title',
-    captionDelay: 250,
-    scrollZoom: false,
-  });
-  gallery.refresh();
-}
-// export function removeEl(elem, classToReamove) {
-//     elem.classList.remove(`${classToReamove}`);
-//  }
