@@ -4,6 +4,7 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import { createMarkUp } from './js/render-functions';
 import { searchData } from './js/pixabay-api';
+import errorIcon from '/img/error.png';
 
 export const resp = {
   formEl: document.querySelector('.form'),
@@ -33,7 +34,7 @@ function onSubmit(evt) {
           position: 'topRight',
           backgroundColor: '#ef4040',
           messageColor: '#fafafb',
-          iconUrl: '/img/close-ico.png',
+          iconUrl: errorIcon,
           message:
             'Sorry, there are no images matching your search query. Please try again!',
         });
